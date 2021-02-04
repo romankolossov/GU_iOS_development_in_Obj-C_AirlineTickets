@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8119C2D25CC704500D3E261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */; };
+		C8119C3025CC704500D3E261 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C2F25CC704500D3E261 /* main.m */; };
+		C8119C3D25CC741100D3E261 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C3C25CC741100D3E261 /* AppDelegate.m */; };
+		C8119C4225CC745700D3E261 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C4125CC745700D3E261 /* SceneDelegate.m */; };
+		C8119C4C25CC74F200D3E261 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */; };
+		C8119C5025CC752100D3E261 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C4F25CC752100D3E261 /* ProgressView.m */; };
+		C8119C5425CC755000D3E261 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C5225CC755000D3E261 /* ContentViewController.m */; };
+		C8119C5B25CC757700D3E261 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C5925CC757600D3E261 /* LocationService.m */; };
+		C8119C6125CC759900D3E261 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C5D25CC759900D3E261 /* MainViewController.m */; };
+		C8119C6225CC759900D3E261 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C5E25CC759900D3E261 /* FirstViewController.m */; };
+		C8119C6A25CC75C200D3E261 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */; };
+		C8119C6B25CC75C200D3E261 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C6625CC75C200D3E261 /* NotificationCenter.m */; };
+		C8119C6C25CC75C200D3E261 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C6825CC75C200D3E261 /* TicketsViewController.m */; };
+		C8119C7025CC75E400D3E261 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8119C6E25CC75E400D3E261 /* Model.xcdatamodeld */; };
+		C8119C7A25CC760C00D3E261 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C7225CC760B00D3E261 /* PlaceViewController.m */; };
+		C8119C7B25CC760C00D3E261 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C7525CC760B00D3E261 /* TabBarController.m */; };
+		C8119C7C25CC760C00D3E261 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C7725CC760C00D3E261 /* APIManager.m */; };
+		C8119C7D25CC760C00D3E261 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C7825CC760C00D3E261 /* MapViewController.m */; };
+		C8119C8125CC763E00D3E261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8119C8025CC763E00D3E261 /* Assets.xcassets */; };
+		C8119C8D25CC76E900D3E261 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8325CC76E600D3E261 /* Country.m */; };
+		C8119C8E25CC76E900D3E261 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8525CC76E600D3E261 /* City.m */; };
+		C8119C8F25CC76E900D3E261 /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8625CC76E600D3E261 /* Airport.m */; };
+		C8119C9025CC76E900D3E261 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8825CC76E700D3E261 /* DataManager.m */; };
+		C8119C9125CC76E900D3E261 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8925CC76E800D3E261 /* Ticket.m */; };
+		C8119C9625CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8119C9425CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift */; };
+		C8119C9725CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8119C9525CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift */; };
+		C8119C9B25CC7D8600D3E261 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C9A25CC7D8600D3E261 /* MapPrice.m */; };
+		C8AA6C1925CC81C30069A966 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1825CC81C30069A966 /* airports.json */; };
+		C8AA6C1C25CC81D90069A966 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1B25CC81D90069A966 /* cities.json */; };
+		C8AA6C1F25CC81F00069A966 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1E25CC81F00069A966 /* countries.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C8119C1A25CC704100D3E261 /* AirlineTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirlineTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8119C2C25CC704500D3E261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8119C2E25CC704500D3E261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8119C2F25CC704500D3E261 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8119C3B25CC73F700D3E261 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C8119C3C25CC741100D3E261 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C8119C4025CC743E00D3E261 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C8119C4125CC745700D3E261 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C8119C4A25CC74F100D3E261 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		C8119C4E25CC752100D3E261 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		C8119C4F25CC752100D3E261 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		C8119C5225CC755000D3E261 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		C8119C5325CC755000D3E261 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		C8119C5625CC757600D3E261 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		C8119C5825CC757600D3E261 /* MapPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		C8119C5925CC757600D3E261 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		C8119C5D25CC759900D3E261 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C8119C5E25CC759900D3E261 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		C8119C5F25CC759900D3E261 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		C8119C6025CC759900D3E261 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		C8119C6525CC75C200D3E261 /* NotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		C8119C6625CC75C200D3E261 /* NotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		C8119C6725CC75C200D3E261 /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		C8119C6825CC75C200D3E261 /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
+		C8119C6925CC75C200D3E261 /* TicketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		C8119C6F25CC75E400D3E261 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C8119C7225CC760B00D3E261 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		C8119C7325CC760B00D3E261 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C8119C7425CC760B00D3E261 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		C8119C7525CC760B00D3E261 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		C8119C7625CC760C00D3E261 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		C8119C7725CC760C00D3E261 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		C8119C7825CC760C00D3E261 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C8119C7925CC760C00D3E261 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		C8119C8025CC763E00D3E261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8119C8325CC76E600D3E261 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		C8119C8425CC76E600D3E261 /* Airport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		C8119C8525CC76E600D3E261 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		C8119C8625CC76E600D3E261 /* Airport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		C8119C8725CC76E700D3E261 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		C8119C8825CC76E700D3E261 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		C8119C8925CC76E800D3E261 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		C8119C8A25CC76E800D3E261 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		C8119C8B25CC76E800D3E261 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		C8119C8C25CC76E800D3E261 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		C8119C9325CC7B2D00D3E261 /* AirlineTickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirlineTickets-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8119C9425CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteTicket+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C8119C9525CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteTicket+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C8119C9A25CC7D8600D3E261 /* MapPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		C8AA6C1825CC81C30069A966 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		C8AA6C1B25CC81D90069A966 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		C8AA6C1E25CC81F00069A966 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8119C1725CC704100D3E261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8119C1125CC704100D3E261 = {
+			isa = PBXGroup;
+			children = (
+				C8119C9425CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift */,
+				C8119C9525CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift */,
+				C8119C1C25CC704100D3E261 /* AirlineTickets */,
+				C8119C1B25CC704100D3E261 /* Products */,
+				C8119C9325CC7B2D00D3E261 /* AirlineTickets-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		C8119C1B25CC704100D3E261 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C1A25CC704100D3E261 /* AirlineTickets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8119C1C25CC704100D3E261 /* AirlineTickets */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C1725CC81A30069A966 /* JSON */,
+				C8119C4A25CC74F100D3E261 /* CoreDataHelper.h */,
+				C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */,
+				C8119C4E25CC752100D3E261 /* ProgressView.h */,
+				C8119C4F25CC752100D3E261 /* ProgressView.m */,
+				C8119C5325CC755000D3E261 /* ContentViewController.h */,
+				C8119C5225CC755000D3E261 /* ContentViewController.m */,
+				C8119C5625CC757600D3E261 /* LocationService.h */,
+				C8119C5925CC757600D3E261 /* LocationService.m */,
+				C8119C5825CC757600D3E261 /* MapPrice.h */,
+				C8119C9A25CC7D8600D3E261 /* MapPrice.m */,
+				C8119C5F25CC759900D3E261 /* FirstViewController.h */,
+				C8119C5E25CC759900D3E261 /* FirstViewController.m */,
+				C8119C6025CC759900D3E261 /* MainViewController.h */,
+				C8119C5D25CC759900D3E261 /* MainViewController.m */,
+				C8119C6525CC75C200D3E261 /* NotificationCenter.h */,
+				C8119C6625CC75C200D3E261 /* NotificationCenter.m */,
+				C8119C6725CC75C200D3E261 /* TicketsViewController.h */,
+				C8119C6825CC75C200D3E261 /* TicketsViewController.m */,
+				C8119C6925CC75C200D3E261 /* TicketTableViewCell.h */,
+				C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */,
+				C8119C6E25CC75E400D3E261 /* Model.xcdatamodeld */,
+				C8119C7625CC760C00D3E261 /* APIManager.h */,
+				C8119C7725CC760C00D3E261 /* APIManager.m */,
+				C8119C7325CC760B00D3E261 /* MapViewController.h */,
+				C8119C7825CC760C00D3E261 /* MapViewController.m */,
+				C8119C7925CC760C00D3E261 /* PlaceViewController.h */,
+				C8119C7225CC760B00D3E261 /* PlaceViewController.m */,
+				C8119C7425CC760B00D3E261 /* TabBarController.h */,
+				C8119C7525CC760B00D3E261 /* TabBarController.m */,
+				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
+				C8119C4525CC747700D3E261 /* Supporting files */,
+				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
+				C8119C2E25CC704500D3E261 /* Info.plist */,
+				C8119C2F25CC704500D3E261 /* main.m */,
+				C8119C8425CC76E600D3E261 /* Airport.h */,
+				C8119C8625CC76E600D3E261 /* Airport.m */,
+				C8119C8725CC76E700D3E261 /* City.h */,
+				C8119C8525CC76E600D3E261 /* City.m */,
+				C8119C8B25CC76E800D3E261 /* Country.h */,
+				C8119C8325CC76E600D3E261 /* Country.m */,
+				C8119C8C25CC76E800D3E261 /* DataManager.h */,
+				C8119C8825CC76E700D3E261 /* DataManager.m */,
+				C8119C8A25CC76E800D3E261 /* Ticket.h */,
+				C8119C8925CC76E800D3E261 /* Ticket.m */,
+			);
+			path = AirlineTickets;
+			sourceTree = "<group>";
+		};
+		C8119C4525CC747700D3E261 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C3B25CC73F700D3E261 /* AppDelegate.h */,
+				C8119C3C25CC741100D3E261 /* AppDelegate.m */,
+				C8119C4025CC743E00D3E261 /* SceneDelegate.h */,
+				C8119C4125CC745700D3E261 /* SceneDelegate.m */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C8AA6C1725CC81A30069A966 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C1825CC81C30069A966 /* airports.json */,
+				C8AA6C1B25CC81D90069A966 /* cities.json */,
+				C8AA6C1E25CC81F00069A966 /* countries.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8119C1925CC704100D3E261 /* AirlineTickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8119C3325CC704500D3E261 /* Build configuration list for PBXNativeTarget "AirlineTickets" */;
+			buildPhases = (
+				C8119C1625CC704100D3E261 /* Sources */,
+				C8119C1725CC704100D3E261 /* Frameworks */,
+				C8119C1825CC704100D3E261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirlineTickets;
+			productName = AirlineTickets;
+			productReference = C8119C1A25CC704100D3E261 /* AirlineTickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8119C1225CC704100D3E261 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C8119C1925CC704100D3E261 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = C8119C1525CC704100D3E261 /* Build configuration list for PBXProject "AirlineTickets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8119C1125CC704100D3E261;
+			productRefGroup = C8119C1B25CC704100D3E261 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8119C1925CC704100D3E261 /* AirlineTickets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8119C1825CC704100D3E261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8AA6C1C25CC81D90069A966 /* cities.json in Resources */,
+				C8119C2D25CC704500D3E261 /* LaunchScreen.storyboard in Resources */,
+				C8119C8125CC763E00D3E261 /* Assets.xcassets in Resources */,
+				C8AA6C1F25CC81F00069A966 /* countries.json in Resources */,
+				C8AA6C1925CC81C30069A966 /* airports.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8119C1625CC704100D3E261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8119C3D25CC741100D3E261 /* AppDelegate.m in Sources */,
+				C8119C6C25CC75C200D3E261 /* TicketsViewController.m in Sources */,
+				C8119C5025CC752100D3E261 /* ProgressView.m in Sources */,
+				C8119C7D25CC760C00D3E261 /* MapViewController.m in Sources */,
+				C8119C9B25CC7D8600D3E261 /* MapPrice.m in Sources */,
+				C8119C7025CC75E400D3E261 /* Model.xcdatamodeld in Sources */,
+				C8119C5425CC755000D3E261 /* ContentViewController.m in Sources */,
+				C8119C3025CC704500D3E261 /* main.m in Sources */,
+				C8119C6A25CC75C200D3E261 /* TicketTableViewCell.m in Sources */,
+				C8119C6125CC759900D3E261 /* MainViewController.m in Sources */,
+				C8119C9625CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift in Sources */,
+				C8119C9025CC76E900D3E261 /* DataManager.m in Sources */,
+				C8119C8F25CC76E900D3E261 /* Airport.m in Sources */,
+				C8119C4C25CC74F200D3E261 /* CoreDataHelper.m in Sources */,
+				C8119C8E25CC76E900D3E261 /* City.m in Sources */,
+				C8119C4225CC745700D3E261 /* SceneDelegate.m in Sources */,
+				C8119C6225CC759900D3E261 /* FirstViewController.m in Sources */,
+				C8119C5B25CC757700D3E261 /* LocationService.m in Sources */,
+				C8119C7A25CC760C00D3E261 /* PlaceViewController.m in Sources */,
+				C8119C7B25CC760C00D3E261 /* TabBarController.m in Sources */,
+				C8119C9725CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift in Sources */,
+				C8119C7C25CC760C00D3E261 /* APIManager.m in Sources */,
+				C8119C9125CC76E900D3E261 /* Ticket.m in Sources */,
+				C8119C6B25CC75C200D3E261 /* NotificationCenter.m in Sources */,
+				C8119C8D25CC76E900D3E261 /* Country.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8119C2C25CC704500D3E261 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8119C3125CC704500D3E261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C8119C3225CC704500D3E261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8119C3425CC704500D3E261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2Z4Y76PYN;
+				INFOPLIST_FILE = AirlineTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rkolossov.AirlineTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AirlineTickets-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8119C3525CC704500D3E261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2Z4Y76PYN;
+				INFOPLIST_FILE = AirlineTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rkolossov.AirlineTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AirlineTickets-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8119C1525CC704100D3E261 /* Build configuration list for PBXProject "AirlineTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8119C3125CC704500D3E261 /* Debug */,
+				C8119C3225CC704500D3E261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8119C3325CC704500D3E261 /* Build configuration list for PBXNativeTarget "AirlineTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8119C3425CC704500D3E261 /* Debug */,
+				C8119C3525CC704500D3E261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8119C6E25CC75E400D3E261 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8119C6F25CC75E400D3E261 /* Model.xcdatamodel */,
+			);
+			currentVersion = C8119C6F25CC75E400D3E261 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C8119C1225CC704100D3E261 /* Project object */;
+}
