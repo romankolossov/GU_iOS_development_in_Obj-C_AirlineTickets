@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  AirlineTickets
+
+  Created by Roman Kolosov on 06.02.2021.
+  
+*/
+
+// TabBarController
+"search_tab" = "Search";
+"map_tab" = "Price map";
+"favorites_tab" = "Favorites";
+
+// MainViewController
+"main_VC_name" = "Search";
+"main_from" = "From";
+"main_to" = "To";
+"main_search" = "Find";
+
+// TicketsViewController
+"tickets_VC_name" = "Tickets";
+
+// FavoriteTicketsViewController
+"favorite_tickets_VC_name" = "Favorite";
+
+// MapViewController
+"map_VC_name" = "Price map";
+
+

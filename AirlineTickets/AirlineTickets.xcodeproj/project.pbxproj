@@ -37,6 +37,8 @@
 		C8AA6C1F25CC81F00069A966 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1E25CC81F00069A966 /* countries.json */; };
 		C8AA6C5E25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AA6C5C25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift */; };
 		C8AA6C5F25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AA6C5D25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift */; };
+		C8AA6C6F25CEDE160069A966 /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */; };
+		C8AA6C8B25CEE8E90069A966 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C8D25CEE8E90069A966 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,10 @@
 		C8AA6C5B25CE70A50069A966 /* AirlineTickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirlineTickets-Bridging-Header.h"; sourceTree = "<group>"; };
 		C8AA6C5C25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FavoriteTicket+CoreDataClass.swift"; path = "AirlineTickets/SwiftFiles/FavoriteTicket+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		C8AA6C5D25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FavoriteTicket+CoreDataProperties.swift"; path = "AirlineTickets/SwiftFiles/FavoriteTicket+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		C8AA6C6E25CEDE160069A966 /* NSString+Localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		C8AA6C8C25CEE8E90069A966 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8AA6C8F25CEE9970069A966 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				C8AA6C5A25CE707D0069A966 /* CoreData */,
 				C8AA6C6425CE73E10069A966 /* SwiftFiles */,
 				C8AA6C2D25CE5A110069A966 /* Utils */,
+				C8AA6C6C25CEDDD30069A966 /* Localizations */,
 				C8119C4525CC747700D3E261 /* SupportingFiles */,
 			);
 			path = AirlineTickets;
@@ -279,6 +286,24 @@
 			path = SwiftFiles;
 			sourceTree = "<group>";
 		};
+		C8AA6C6C25CEDDD30069A966 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C7425CEE42C0069A966 /* needsToAddIfUsingCustomMethod-localize */,
+				C8AA6C8D25CEE8E90069A966 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		C8AA6C7425CEE42C0069A966 /* needsToAddIfUsingCustomMethod-localize */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C6E25CEDE160069A966 /* NSString+Localize.h */,
+				C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */,
+			);
+			path = "needsToAddIfUsingCustomMethod-localize";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +345,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = C8119C1125CC704100D3E261;
 			productRefGroup = C8119C1B25CC704100D3E261 /* Products */;
@@ -337,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8AA6C1C25CC81D90069A966 /* cities.json in Resources */,
+				C8AA6C8B25CEE8E90069A966 /* Localizable.strings in Resources */,
 				C8119C2D25CC704500D3E261 /* LaunchScreen.storyboard in Resources */,
 				C8119C8125CC763E00D3E261 /* Assets.xcassets in Resources */,
 				C8AA6C1F25CC81F00069A966 /* countries.json in Resources */,
@@ -367,6 +394,7 @@
 				C8119C4C25CC74F200D3E261 /* CoreDataHelper.m in Sources */,
 				C8119C8E25CC76E900D3E261 /* City.m in Sources */,
 				C8119C4225CC745700D3E261 /* SceneDelegate.m in Sources */,
+				C8AA6C6F25CEDE160069A966 /* NSString+Localize.m in Sources */,
 				C8119C6225CC759900D3E261 /* FirstViewController.m in Sources */,
 				C8119C5B25CC757700D3E261 /* LocationService.m in Sources */,
 				C8119C7A25CC760C00D3E261 /* PlaceViewController.m in Sources */,
@@ -390,6 +418,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C8AA6C8D25CEE8E90069A966 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AA6C8C25CEE8E90069A966 /* en */,
+				C8AA6C8F25CEE9970069A966 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -397,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -456,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

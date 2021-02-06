@@ -28,7 +28,7 @@
     if (self) {
         isFavorites = YES;
         self.tickets = [NSArray new];
-        self.title = @"Избранное";
+        self.title = NSLocalizedString(@"favorite_tickets_VC_name", "Favorite tickets");;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.tableView registerClass:[TicketTableViewCell class] forCellReuseIdentifier:TicketCellReuseIdentifier];
     }
@@ -41,7 +41,7 @@
     if (self)
     {
         _tickets = tickets;
-        self.title = @"Билеты";
+        self.title = NSLocalizedString(@"tickets_VC_name", "Tickets");
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.tableView registerClass:[TicketTableViewCell class] forCellReuseIdentifier:TicketCellReuseIdentifier];
         
