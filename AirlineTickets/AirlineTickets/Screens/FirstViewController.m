@@ -35,7 +35,7 @@
     ContentViewController *startViewController = [self viewControllerAtIndex:0];
     [self setViewControllers:@[startViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
-    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 150.0, self.view.bounds.size.width, 50.0)];
+    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 88.0, self.view.bounds.size.width, 50.0)];
     _pageControl.numberOfPages = CONTENT_COUNT;
     _pageControl.currentPage = 0;
     _pageControl.pageIndicatorTintColor = [UIColor darkGrayColor];
@@ -43,7 +43,7 @@
     [self.view addSubview:_pageControl];
     
     _nextButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _nextButton.frame = CGRectMake(self.view.bounds.size.width - 100.0, self.view.bounds.size.height - 150.0, 100.0, 50.0);
+    _nextButton.frame = CGRectMake(self.view.bounds.size.width - 100.0, self.view.bounds.size.height - 88.0, 100.0, 50.0);
     [_nextButton addTarget:self action:@selector(nextButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
     [_nextButton setTintColor:[UIColor blackColor]];
     [self updateButtonWithIndex:0];
@@ -57,7 +57,7 @@
     for (int i = 0; i < 4; ++i) {
         contentData[i].title = [titles objectAtIndex:i];
         contentData[i].contentText = [contents objectAtIndex:i];
-        contentData[i].imageName = [NSString stringWithFormat:@"first_%d", i+1];
+        contentData[i].imageName = [NSString stringWithFormat:@"firstVC_%d", i+1];
     }
 }
 

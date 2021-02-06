@@ -36,7 +36,9 @@
 - (void)presentFirstViewControllerIfNeeded
 {
     BOOL isFirstStart = [[NSUserDefaults standardUserDefaults] boolForKey:@"first_start"];
-    if (!isFirstStart) {
+    
+    //NOTE: to show the PageVC during the first start only use "!isFirstStart"
+    if (!isFirstStart || isFirstStart) {
         FirstViewController *firstViewController = [[FirstViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
         [self presentViewController:firstViewController animated:YES completion:nil];
     }
