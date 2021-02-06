@@ -130,63 +130,30 @@
 			isa = PBXGroup;
 			children = (
 				C8AA6C1725CC81A30069A966 /* JSON */,
-				C8119C4A25CC74F100D3E261 /* CoreDataHelper.h */,
-				C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */,
-				C8119C4E25CC752100D3E261 /* ProgressView.h */,
-				C8119C4F25CC752100D3E261 /* ProgressView.m */,
-				C8119C5325CC755000D3E261 /* ContentViewController.h */,
-				C8119C5225CC755000D3E261 /* ContentViewController.m */,
-				C8119C5625CC757600D3E261 /* LocationService.h */,
-				C8119C5925CC757600D3E261 /* LocationService.m */,
-				C8119C5825CC757600D3E261 /* MapPrice.h */,
-				C8119C9A25CC7D8600D3E261 /* MapPrice.m */,
-				C8119C5F25CC759900D3E261 /* FirstViewController.h */,
-				C8119C5E25CC759900D3E261 /* FirstViewController.m */,
-				C8119C6025CC759900D3E261 /* MainViewController.h */,
-				C8119C5D25CC759900D3E261 /* MainViewController.m */,
-				C8119C6525CC75C200D3E261 /* NotificationCenter.h */,
-				C8119C6625CC75C200D3E261 /* NotificationCenter.m */,
-				C8119C6725CC75C200D3E261 /* TicketsViewController.h */,
-				C8119C6825CC75C200D3E261 /* TicketsViewController.m */,
-				C8119C6925CC75C200D3E261 /* TicketTableViewCell.h */,
-				C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */,
+				C8AA6C2825CE592A0069A966 /* Services */,
+				C8AA6C2925CE59370069A966 /* Managers */,
+				C8AA6C2A25CE59570069A966 /* Models */,
+				C8AA6C2B25CE59670069A966 /* Components */,
+				C8AA6C2C25CE59DD0069A966 /* Screens */,
+				C8AA6C2D25CE5A110069A966 /* Utils */,
+				C8119C4525CC747700D3E261 /* SupportingFiles */,
 				C8119C6E25CC75E400D3E261 /* Model.xcdatamodeld */,
-				C8119C7625CC760C00D3E261 /* APIManager.h */,
-				C8119C7725CC760C00D3E261 /* APIManager.m */,
-				C8119C7325CC760B00D3E261 /* MapViewController.h */,
-				C8119C7825CC760C00D3E261 /* MapViewController.m */,
-				C8119C7925CC760C00D3E261 /* PlaceViewController.h */,
-				C8119C7225CC760B00D3E261 /* PlaceViewController.m */,
-				C8119C7425CC760B00D3E261 /* TabBarController.h */,
-				C8119C7525CC760B00D3E261 /* TabBarController.m */,
-				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
-				C8119C4525CC747700D3E261 /* Supporting files */,
-				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
 				C8119C2E25CC704500D3E261 /* Info.plist */,
-				C8119C2F25CC704500D3E261 /* main.m */,
-				C8119C8425CC76E600D3E261 /* Airport.h */,
-				C8119C8625CC76E600D3E261 /* Airport.m */,
-				C8119C8725CC76E700D3E261 /* City.h */,
-				C8119C8525CC76E600D3E261 /* City.m */,
-				C8119C8B25CC76E800D3E261 /* Country.h */,
-				C8119C8325CC76E600D3E261 /* Country.m */,
-				C8119C8C25CC76E800D3E261 /* DataManager.h */,
-				C8119C8825CC76E700D3E261 /* DataManager.m */,
-				C8119C8A25CC76E800D3E261 /* Ticket.h */,
-				C8119C8925CC76E800D3E261 /* Ticket.m */,
 			);
 			path = AirlineTickets;
 			sourceTree = "<group>";
 		};
-		C8119C4525CC747700D3E261 /* Supporting files */ = {
+		C8119C4525CC747700D3E261 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				C8119C3B25CC73F700D3E261 /* AppDelegate.h */,
 				C8119C3C25CC741100D3E261 /* AppDelegate.m */,
 				C8119C4025CC743E00D3E261 /* SceneDelegate.h */,
 				C8119C4125CC745700D3E261 /* SceneDelegate.m */,
+				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
+				C8119C2F25CC704500D3E261 /* main.m */,
 			);
-			path = "Supporting files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		C8AA6C1725CC81A30069A966 /* JSON */ = {
@@ -197,6 +164,103 @@
 				C8AA6C1E25CC81F00069A966 /* countries.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		C8AA6C2825CE592A0069A966 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C5625CC757600D3E261 /* LocationService.h */,
+				C8119C5925CC757600D3E261 /* LocationService.m */,
+				C8119C6525CC75C200D3E261 /* NotificationCenter.h */,
+				C8119C6625CC75C200D3E261 /* NotificationCenter.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C8AA6C2925CE59370069A966 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C4A25CC74F100D3E261 /* CoreDataHelper.h */,
+				C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */,
+				C8119C7625CC760C00D3E261 /* APIManager.h */,
+				C8119C7725CC760C00D3E261 /* APIManager.m */,
+				C8119C8C25CC76E800D3E261 /* DataManager.h */,
+				C8119C8825CC76E700D3E261 /* DataManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C8AA6C2A25CE59570069A966 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C5825CC757600D3E261 /* MapPrice.h */,
+				C8119C9A25CC7D8600D3E261 /* MapPrice.m */,
+				C8119C8425CC76E600D3E261 /* Airport.h */,
+				C8119C8625CC76E600D3E261 /* Airport.m */,
+				C8119C8725CC76E700D3E261 /* City.h */,
+				C8119C8525CC76E600D3E261 /* City.m */,
+				C8119C8B25CC76E800D3E261 /* Country.h */,
+				C8119C8325CC76E600D3E261 /* Country.m */,
+				C8119C8A25CC76E800D3E261 /* Ticket.h */,
+				C8119C8925CC76E800D3E261 /* Ticket.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8AA6C2B25CE59670069A966 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C4E25CC752100D3E261 /* ProgressView.h */,
+				C8119C4F25CC752100D3E261 /* ProgressView.m */,
+				C8119C6925CC75C200D3E261 /* TicketTableViewCell.h */,
+				C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C8AA6C2C25CE59DD0069A966 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C6025CC759900D3E261 /* MainViewController.h */,
+				C8119C5D25CC759900D3E261 /* MainViewController.m */,
+				C8119C5F25CC759900D3E261 /* FirstViewController.h */,
+				C8119C5E25CC759900D3E261 /* FirstViewController.m */,
+				C8119C5325CC755000D3E261 /* ContentViewController.h */,
+				C8119C5225CC755000D3E261 /* ContentViewController.m */,
+				C8119C6725CC75C200D3E261 /* TicketsViewController.h */,
+				C8119C6825CC75C200D3E261 /* TicketsViewController.m */,
+				C8119C7325CC760B00D3E261 /* MapViewController.h */,
+				C8119C7825CC760C00D3E261 /* MapViewController.m */,
+				C8119C7925CC760C00D3E261 /* PlaceViewController.h */,
+				C8119C7225CC760B00D3E261 /* PlaceViewController.m */,
+				C8119C7425CC760B00D3E261 /* TabBarController.h */,
+				C8119C7525CC760B00D3E261 /* TabBarController.m */,
+				C8AA6C2E25CE5A650069A966 /* Storyboard */,
+				C8AA6C2F25CE5A730069A966 /* Common */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C8AA6C2D25CE5A110069A966 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C8AA6C2E25CE5A650069A966 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C8AA6C2F25CE5A730069A966 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
