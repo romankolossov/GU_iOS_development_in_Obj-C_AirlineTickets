@@ -17,6 +17,20 @@
 "main_to" = "To";
 "main_search" = "Find";
 
+// FirstViewController
+"about_app_header" = "ABOUT";
+"tickets_header" = "AIRLINE TICKETS";
+"map_price_header" = "PRICE MAP";
+"favorites_header" = "FAVORITE";
+
+"about_app_describe" = "Application for searching airline tickets";
+"tickets_describe" = "Search the tickets at goog price";
+"map_price_describe" = "Search with the price map";
+"favorites_describe" = "Save tickets in favorites";
+
+"next_button" = "NEXT";
+"done_button" = "DONE";
+
 // TicketsViewController
 "tickets_VC_name" = "Tickets";
 
