@@ -126,17 +126,15 @@
 		C8119C1C25CC704100D3E261 /* AirlineTickets */ = {
 			isa = PBXGroup;
 			children = (
-				C8AA6C6425CE73E10069A966 /* SwiftFiles */,
-				C8AA6C5A25CE707D0069A966 /* CoreData */,
-				C8AA6C1725CC81A30069A966 /* JSON */,
 				C8AA6C2825CE592A0069A966 /* Services */,
 				C8AA6C2925CE59370069A966 /* Managers */,
 				C8AA6C2A25CE59570069A966 /* Models */,
 				C8AA6C2B25CE59670069A966 /* Components */,
 				C8AA6C2C25CE59DD0069A966 /* Screens */,
+				C8AA6C5A25CE707D0069A966 /* CoreData */,
+				C8AA6C6425CE73E10069A966 /* SwiftFiles */,
 				C8AA6C2D25CE5A110069A966 /* Utils */,
 				C8119C4525CC747700D3E261 /* SupportingFiles */,
-				C8119C2E25CC704500D3E261 /* Info.plist */,
 			);
 			path = AirlineTickets;
 			sourceTree = "<group>";
@@ -149,6 +147,7 @@
 				C8119C4025CC743E00D3E261 /* SceneDelegate.h */,
 				C8119C4125CC745700D3E261 /* SceneDelegate.m */,
 				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
+				C8119C2E25CC704500D3E261 /* Info.plist */,
 				C8119C2F25CC704500D3E261 /* main.m */,
 			);
 			path = SupportingFiles;
@@ -191,6 +190,7 @@
 		C8AA6C2A25CE59570069A966 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C8AA6C1725CC81A30069A966 /* JSON */,
 				C8119C5825CC757600D3E261 /* MapPrice.h */,
 				C8119C9A25CC7D8600D3E261 /* MapPrice.m */,
 				C8119C8425CC76E600D3E261 /* Airport.h */,
@@ -219,6 +219,8 @@
 		C8AA6C2C25CE59DD0069A966 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C8AA6C2E25CE5A650069A966 /* Storyboard */,
+				C8AA6C2F25CE5A730069A966 /* Common */,
 				C8119C6025CC759900D3E261 /* MainViewController.h */,
 				C8119C5D25CC759900D3E261 /* MainViewController.m */,
 				C8119C5F25CC759900D3E261 /* FirstViewController.h */,
@@ -231,10 +233,6 @@
 				C8119C7825CC760C00D3E261 /* MapViewController.m */,
 				C8119C7925CC760C00D3E261 /* PlaceViewController.h */,
 				C8119C7225CC760B00D3E261 /* PlaceViewController.m */,
-				C8119C7425CC760B00D3E261 /* TabBarController.h */,
-				C8119C7525CC760B00D3E261 /* TabBarController.m */,
-				C8AA6C2E25CE5A650069A966 /* Storyboard */,
-				C8AA6C2F25CE5A730069A966 /* Common */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -258,6 +256,8 @@
 		C8AA6C2F25CE5A730069A966 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C8119C7425CC760B00D3E261 /* TabBarController.h */,
+				C8119C7525CC760B00D3E261 /* TabBarController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2Z4Y76PYN;
-				INFOPLIST_FILE = AirlineTickets/Info.plist;
+				INFOPLIST_FILE = AirlineTickets/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +535,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2Z4Y76PYN;
-				INFOPLIST_FILE = AirlineTickets/Info.plist;
+				INFOPLIST_FILE = AirlineTickets/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
