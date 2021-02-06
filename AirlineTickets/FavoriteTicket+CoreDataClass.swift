@@ -2,7 +2,7 @@
 //  FavoriteTicket+CoreDataClass.swift
 //  AirlineTickets
 //
-//  Created by Roman Kolosov on 04.02.2021.
+//  Created by Roman Kolosov on 06.02.2021.
 //
 //
 
