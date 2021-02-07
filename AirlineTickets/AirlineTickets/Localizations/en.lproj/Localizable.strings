@@ -23,7 +23,7 @@
 "map_price_header" = "PRICE MAP";
 "favorites_header" = "FAVORITE";
 
-"about_app_describe" = "Application for searching airline tickets";
+"about_app_describe" = "Air Marvel is an application for searching airline tickets";
 "tickets_describe" = "Search the tickets at goog price";
 "map_price_describe" = "Search with the price map";
 "favorites_describe" = "Save tickets to favorites";

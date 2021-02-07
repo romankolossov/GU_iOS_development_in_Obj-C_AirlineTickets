@@ -159,8 +159,8 @@
 				C8119C4125CC745700D3E261 /* SceneDelegate.m */,
 				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
 				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
-				C8119C2E25CC704500D3E261 /* Info.plist */,
 				C8AA6C9F25D066050069A966 /* InfoPlist.strings */,
+				C8119C2E25CC704500D3E261 /* Info.plist */,
 				C8119C2F25CC704500D3E261 /* main.m */,
 			);
 			path = SupportingFiles;
@@ -232,7 +232,6 @@
 		C8AA6C2C25CE59DD0069A966 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C8AA6C2E25CE5A650069A966 /* Storyboard */,
 				C8AA6C2F25CE5A730069A966 /* Common */,
 				C8119C6025CC759900D3E261 /* MainViewController.h */,
 				C8119C5D25CC759900D3E261 /* MainViewController.m */,
@@ -256,13 +255,6 @@
 				C8AA6C5B25CE70A50069A966 /* AirlineTickets-Bridging-Header.h */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		C8AA6C2E25CE5A650069A966 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		C8AA6C2F25CE5A730069A966 /* Common */ = {
