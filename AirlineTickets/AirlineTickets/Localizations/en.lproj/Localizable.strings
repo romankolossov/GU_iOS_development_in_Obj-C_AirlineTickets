@@ -55,11 +55,11 @@
 // Alerts
 "error" = "Error";
 "sorry" = "Sorry";
-"tickets_not_found" = "There is no tickets available for this destination";
+"tickets_not_found" = "There is no tickets available for chosen destination";
 "close" = "Close";
 "not_set_place_arrival_or_departure" = "Please, choose departure and destination places";
 "actions_with_a_ticket" = "Ticket action";
-"actions_with_tickets_describe" = "What do You want to do with chosen ticket?";
+"actions_with_tickets_describe" = "What do You want to do with the ticket chosen?";
 "not_determine_current_city" = "The current city is not found";
 
 

@@ -82,7 +82,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd MMMM yyyy hh:mm";
     _dateLabel.text = [dateFormatter stringFromDate:favoriteTicket.departure];
-    NSURL *urlLogo = AirlineLogo(favoriteTicket.airline);
+//    NSURL *urlLogo = AirlineLogo(favoriteTicket.airline);
 //    [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
 }
 
