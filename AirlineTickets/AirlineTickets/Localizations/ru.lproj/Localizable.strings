@@ -50,12 +50,19 @@
 // MapViewController
 "map_VC_name" = "Карта цен";
 
+// PlaceViewController
+"place_VC_cities" = "Города";
+"place_VC_airports" = "Аэропорты";
+"place_VC_from" = "Откуда";
+"place_VC_to" = "Куда";
+
 // Alerts
 "error" = "Ошибка";
+"sorry" = "Извините";
 "tickets_not_found" = "По данному направлению билетов не найдено";
 "close" = "Закрыть";
 "not_set_place_arrival_or_departure" = "Необходимо указать место отправления и место прибытия";
-"actions_with_tickets" = "Действия с билетом";
+"actions_with_a_ticket" = "Действия с билетом";
 "actions_with_tickets_describe" = "Что необходимо сделать с выбранным билетом?";
 "not_determine_current_city" = "Не удалось определить текущий город!";
 
