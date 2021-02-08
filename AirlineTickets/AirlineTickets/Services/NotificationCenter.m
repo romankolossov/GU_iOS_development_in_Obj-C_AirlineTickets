@@ -76,13 +76,19 @@ Notification NotificationMake(NSString* _Nullable title, NSString* _Nonnull body
     return notification;
 }
 
-
+// MARK: - UNUserNotificationCenterDelegate methods
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(nonnull UNNotification *)notification withCompletionHandler:(nonnull void (^)(UNNotificationPresentationOptions))completionHandler {
     completionHandler(UNAuthorizationOptionAlert | UNAuthorizationOptionBadge |UNAuthorizationOptionSound);
+    
     NSLog(@"Notification recieved");
 }
 
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    completionHandler();
+    
+    NSLog(@"Notification seen");
+}
 
 
 

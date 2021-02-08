@@ -107,8 +107,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (isFavorites) return;
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"actions_with_a_ticket", "Ticket actions") message:NSLocalizedString(@"actions_with_tickets_describe", "What do You want to do with selected ticket?") preferredStyle:UIAlertControllerStyleActionSheet];
+    
     UIAlertAction *favoriteAction;
+    
     if ([[CoreDataHelper sharedInstance] isFavorite: [_tickets objectAtIndex:indexPath.row]]) {
         favoriteAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"remove_from_favorite", "") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
             [[CoreDataHelper sharedInstance] removeFromFavorite:[self->_tickets objectAtIndex:indexPath.row]];
@@ -121,16 +124,22 @@
     
     UIAlertAction *notificationAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"remind_me", "Remind later") style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
         self->notificationCell = [tableView cellForRowAtIndexPath:indexPath];
+        
+        //[[CoreDataHelper sharedInstance] addToFavorite:[self->_tickets objectAtIndex:indexPath.row]];
+        
         [self->_dateTextField becomeFirstResponder];
         }];
      
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"close", "") style:UIAlertActionStyleCancel handler:nil];
+    
     [alertController addAction:favoriteAction];
     [alertController addAction:notificationAction];
     [alertController addAction:cancelAction];
+    
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
+// MARK: - Major methods
 
 - (void)doneButtonDidTap:(UIBarButtonItem *)sender
 {
@@ -161,6 +170,7 @@
     }
     _datePicker.date = [NSDate date];
     notificationCell = nil;
+    
     [self.view endEditing:YES];
 }
 

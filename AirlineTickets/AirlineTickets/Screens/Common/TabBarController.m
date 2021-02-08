@@ -40,10 +40,13 @@
     [controllers addObject:mapNavigationController];
     
     TicketsViewController *favoriteViewController = [[TicketsViewController alloc] initFavoriteTicketsController];
+    
         favoriteViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"favorites_tab", "Favorite tickets") image:[UIImage imageNamed:@"favorite"] selectedImage:[UIImage imageNamed:@"favorite_selected"]];
+    
         UINavigationController *favoriteNavigationController = [[UINavigationController alloc] initWithRootViewController:favoriteViewController];
+    
         [controllers addObject:favoriteNavigationController];
-
+    
     return controllers;
 }
 
