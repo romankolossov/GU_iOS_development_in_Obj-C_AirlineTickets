@@ -37,6 +37,7 @@
         _priceLabel.font = [UIFont systemFontOfSize:24.0 weight:UIFontWeightBold];
         [self.contentView addSubview:_priceLabel];
         
+        
         _airlineLogoView = [[UIImageView alloc] initWithFrame:self.bounds];
         _airlineLogoView.contentMode = UIViewContentModeScaleAspectFit;
         [self.contentView addSubview:_airlineLogoView];
@@ -56,12 +57,13 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
     self.contentView.frame = CGRectMake(10.0, 10.0, [UIScreen mainScreen].bounds.size.width - 20.0, self.frame.size.height - 20.0);
+    
     _priceLabel.frame = CGRectMake(10.0, 10.0, self.contentView.frame.size.width - 110.0, 40.0);
     _airlineLogoView.frame = CGRectMake(CGRectGetMaxX(_priceLabel.frame) + 10.0, 10.0, 80.0, 80.0);
     _placesLabel.frame = CGRectMake(10.0, CGRectGetMaxY(_priceLabel.frame) + 16.0, 100.0, 20.0);
     _dateLabel.frame = CGRectMake(10.0, CGRectGetMaxY(_placesLabel.frame) + 8.0, self.contentView.frame.size.width - 20.0, 20.0);
+
 }
 
 // MARK: - Major methods
@@ -91,12 +93,34 @@
 }
 
 -(void)animate {
-    [UIView animateWithDuration:0.6 animations:^{
+    [UIView animateWithDuration:0.8 animations:^{
         self.contentView.alpha = 1;
     }];
+    
+    [UIView transitionWithView:self.priceLabel
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionFlipFromTop
+                    animations:^{
+                        self.priceLabel.alpha = 1;
+                    }
+                    completion: nil];
+    
+    [UIView transitionWithView:self.placesLabel
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionFlipFromTop
+                    animations:^{
+                        self.placesLabel.alpha = 1;
+                    }
+                    completion: nil];
+    
+    [UIView transitionWithView:self.dateLabel
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionFlipFromTop
+                    animations:^{
+                        self.dateLabel.alpha = 1;
+                    }
+                    completion: nil];
 }
-
-
 
 
 @end
