@@ -92,13 +92,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TicketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TicketCellReuseIdentifier forIndexPath:indexPath];
-        if (isFavorites) {
-            cell.favoriteTicket = [_tickets objectAtIndex:indexPath.row];
-        } else {
-            cell.ticket = [_tickets objectAtIndex:indexPath.row];
-        }
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        return cell;
+    
+    if (isFavorites) {
+        cell.favoriteTicket = [_tickets objectAtIndex:indexPath.row];
+    } else {
+        cell.ticket = [_tickets objectAtIndex:indexPath.row];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    [cell animate];
+    
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

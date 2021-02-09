@@ -17,8 +17,9 @@
 @end
 
 
-
 @implementation TicketTableViewCell
+
+// MARK: - Initializer
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -30,6 +31,7 @@
         self.contentView.layer.shadowOpacity = 1.0;
         self.contentView.layer.cornerRadius = 6.0;
         self.contentView.backgroundColor = [UIColor whiteColor];
+        self.contentView.alpha = 0;
         
         _priceLabel = [[UILabel alloc] initWithFrame:self.bounds];
         _priceLabel.font = [UIFont systemFontOfSize:24.0 weight:UIFontWeightBold];
@@ -62,10 +64,12 @@
     _dateLabel.frame = CGRectMake(10.0, CGRectGetMaxY(_placesLabel.frame) + 8.0, self.contentView.frame.size.width - 20.0, 20.0);
 }
 
+// MARK: - Major methods
+
 - (void)setTicket:(Ticket *)ticket {
     _ticket = ticket;
     
-    _priceLabel.text = [NSString stringWithFormat:@"%@ руб.", ticket.price];
+    _priceLabel.text = [NSString stringWithFormat:@"%@ RUB", ticket.price];
     _placesLabel.text = [NSString stringWithFormat:@"%@ - %@", ticket.from, ticket.to];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -76,7 +80,7 @@
 - (void)setFavoriteTicket:(FavoriteTicket *)favoriteTicket {
     _favoriteTicket = favoriteTicket;
     
-    _priceLabel.text = [NSString stringWithFormat:@"%lld руб.", favoriteTicket.price];
+    _priceLabel.text = [NSString stringWithFormat:@"%lld RUB", favoriteTicket.price];
     _placesLabel.text = [NSString stringWithFormat:@"%@ - %@", favoriteTicket.from, favoriteTicket.to];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -84,6 +88,12 @@
     _dateLabel.text = [dateFormatter stringFromDate:favoriteTicket.departure];
 //    NSURL *urlLogo = AirlineLogo(favoriteTicket.airline);
 //    [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
+}
+
+-(void)animate {
+    [UIView animateWithDuration:0.6 animations:^{
+        self.contentView.alpha = 1;
+    }];
 }
 
 
