@@ -7,4 +7,11 @@
 */
 
 "CFBundleDisplayName" = "Air Marvel";
+
 "CFBundleName" = "AirMarvel";
+
+"NSLocationWhenInUseUsageDescription" = "App nedds access to geolocation services on Yor phone in order to work properly. Geolocation will be used when app is running only";
+
+"NSLocationAlwaysandWhenInUseUsageDescription" = "App nedds access to geolocation services on Yor phone in order to work properly. Geolocation will be used always";
+
+

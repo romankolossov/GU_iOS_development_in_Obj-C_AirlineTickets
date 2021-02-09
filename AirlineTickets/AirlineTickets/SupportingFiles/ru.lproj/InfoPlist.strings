@@ -7,4 +7,9 @@
 */
 
 "CFBundleDisplayName" = "Авиа Марвел";
+
 "CFBundleName" = "AirMarvel";
+
+"NSLocationWhenInUseUsageDescription" = "Для работы приложения необщодимо включить службы геолокации на Вашем iPhone. Использование геолокации будет возможно только при работе приложения";
+
+"NSLocationAlwaysandWhenInUseUsageDescription" = "Для работы приложения необщодимо включить службы геолокации на Вашем iPhone. Использование геолокации будет возможно всегда";
