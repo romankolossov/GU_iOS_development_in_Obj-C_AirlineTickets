@@ -153,13 +153,12 @@
 		C8119C4525CC747700D3E261 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C8CD477825D3A96E009347E6 /* forBase */,
 				C8119C3B25CC73F700D3E261 /* AppDelegate.h */,
 				C8119C3C25CC741100D3E261 /* AppDelegate.m */,
 				C8119C4025CC743E00D3E261 /* SceneDelegate.h */,
 				C8119C4125CC745700D3E261 /* SceneDelegate.m */,
 				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
-				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
-				C8AA6C9F25D066050069A966 /* InfoPlist.strings */,
 				C8119C2E25CC704500D3E261 /* Info.plist */,
 				C8119C2F25CC704500D3E261 /* main.m */,
 			);
@@ -299,6 +298,15 @@
 				C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */,
 			);
 			path = "needsToAddIfUsingCustomMethod-localize";
+			sourceTree = "<group>";
+		};
+		C8CD477825D3A96E009347E6 /* forBase */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C9F25D066050069A966 /* InfoPlist.strings */,
+				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
+			);
+			path = forBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

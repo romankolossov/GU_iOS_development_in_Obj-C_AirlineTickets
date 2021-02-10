@@ -93,13 +93,16 @@
 }
 
 -(void)animate {
-    [UIView animateWithDuration:0.8 animations:^{
+    [UIView animateWithDuration:0.8
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
         self.contentView.alpha = 1;
-    }];
+    } completion:nil];
     
     [UIView transitionWithView:self.priceLabel
                       duration:1.0
-                       options:UIViewAnimationOptionTransitionFlipFromTop
+                       options:UIViewAnimationOptionTransitionFlipFromTop | UIViewAnimationOptionCurveEaseInOut
                     animations:^{
                         self.priceLabel.alpha = 1;
                     }
@@ -107,7 +110,7 @@
     
     [UIView transitionWithView:self.placesLabel
                       duration:1.0
-                       options:UIViewAnimationOptionTransitionFlipFromTop
+                       options:UIViewAnimationOptionTransitionFlipFromTop | UIViewAnimationOptionCurveEaseInOut
                     animations:^{
                         self.placesLabel.alpha = 1;
                     }
@@ -115,7 +118,7 @@
     
     [UIView transitionWithView:self.dateLabel
                       duration:1.0
-                       options:UIViewAnimationOptionTransitionFlipFromTop
+                       options:UIViewAnimationOptionTransitionFlipFromTop | UIViewAnimationOptionCurveEaseInOut
                     animations:^{
                         self.dateLabel.alpha = 1;
                     }

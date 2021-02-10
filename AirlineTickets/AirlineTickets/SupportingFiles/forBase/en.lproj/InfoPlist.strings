@@ -1,0 +1,17 @@
+/* 
+  InfoPlist.strings
+  AirlineTickets
+
+  Created by Roman Kolosov on 07.02.2021.
+  
+*/
+
+"CFBundleDisplayName" = "Air Marvel";
+
+"CFBundleName" = "AirMarvel";
+
+"NSLocationWhenInUseUsageDescription" = "App nedds access to geolocation services on Your device in order to work properly. Geolocation will be used when the app is running only";
+
+"NSLocationAlwaysandWhenInUseUsageDescription" = "App nedds access to geolocation services on Your device in order to work properly. Geolocation will be used always";
+
+
