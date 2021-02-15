@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  AirlineTickets
+
+  Created by Roman Kolosov on 06.02.2021.
+  
+*/
+
+// TabBarController
+"search_tab" = "Search";
+"map_tab" = "Price map";
+"favorites_tab" = "Favorites";
+
+// MainViewController
+"main_VC_name" = "Search";
+"main_from" = "From";
+"main_to" = "To";
+"main_search" = "Find";
+
+// FirstViewController
+"about_app_header" = "ABOUT";
+"tickets_header" = "AIRLINE TICKETS";
+"map_price_header" = "PRICE MAP";
+"favorites_header" = "FAVORITE";
+
+"about_app_describe" = "\"Air Marvel\" is an application for searching airline tickets";
+"tickets_describe" = "Search the tickets at goog price";
+"map_price_describe" = "Search with the price map";
+"favorites_describe" = "Save tickets to favorites";
+
+"next_button" = "NEXT";
+"done_button" = "DONE";
+
+// TicketsViewController
+"tickets_VC_name" = "Tickets";
+"add_to_favorite" = "Add to favorites";
+"remove_from_favorite" = "Remove from favorites";
+"remind_me" = "Remind later";
+"ticket_reminder" = "Ticket reminder";
+"notification_will_be_sent" = "Notification will be sent";
+"success" = "Success";
+
+// FavoriteTicketsViewController
+"favorite_tickets_VC_name" = "Favorites";
+
+// MapViewController
+"map_VC_name" = "Price map";
+
+// PlaceViewController
+"place_VC_cities" = "Cities";
+"place_VC_airports" = "Airports";
+"place_VC_from" = "From";
+"place_VC_to" = "To";
+
+// Alerts
+"error" = "Error";
+"sorry" = "Sorry";
+"tickets_not_found" = "There is no tickets available for chosen destination";
+"close" = "Close";
+"not_set_place_arrival_or_departure" = "Please, choose departure and destination places";
+"actions_with_a_ticket" = "Ticket action";
+"actions_with_tickets_describe" = "What do You want to do with the ticket chosen?";
+"not_determine_current_city" = "The current city is not found";
+
+

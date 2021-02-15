@@ -31,12 +31,15 @@
 		C8119C8F25CC76E900D3E261 /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8625CC76E600D3E261 /* Airport.m */; };
 		C8119C9025CC76E900D3E261 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8825CC76E700D3E261 /* DataManager.m */; };
 		C8119C9125CC76E900D3E261 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C8925CC76E800D3E261 /* Ticket.m */; };
-		C8119C9625CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8119C9425CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift */; };
-		C8119C9725CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8119C9525CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift */; };
 		C8119C9B25CC7D8600D3E261 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = C8119C9A25CC7D8600D3E261 /* MapPrice.m */; };
 		C8AA6C1925CC81C30069A966 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1825CC81C30069A966 /* airports.json */; };
 		C8AA6C1C25CC81D90069A966 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1B25CC81D90069A966 /* cities.json */; };
 		C8AA6C1F25CC81F00069A966 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C1E25CC81F00069A966 /* countries.json */; };
+		C8AA6C5E25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AA6C5C25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift */; };
+		C8AA6C5F25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AA6C5D25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift */; };
+		C8AA6C6F25CEDE160069A966 /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */; };
+		C8AA6C8B25CEE8E90069A966 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C8D25CEE8E90069A966 /* Localizable.strings */; };
+		C8AA6CA125D066050069A966 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8AA6C9F25D066050069A966 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,13 +90,20 @@
 		C8119C8A25CC76E800D3E261 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		C8119C8B25CC76E800D3E261 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
 		C8119C8C25CC76E800D3E261 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
-		C8119C9325CC7B2D00D3E261 /* AirlineTickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirlineTickets-Bridging-Header.h"; sourceTree = "<group>"; };
-		C8119C9425CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteTicket+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C8119C9525CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteTicket+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C8119C9A25CC7D8600D3E261 /* MapPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
 		C8AA6C1825CC81C30069A966 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		C8AA6C1B25CC81D90069A966 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		C8AA6C1E25CC81F00069A966 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		C8AA6C5B25CE70A50069A966 /* AirlineTickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirlineTickets-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8AA6C5C25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FavoriteTicket+CoreDataClass.swift"; path = "AirlineTickets/SwiftFiles/FavoriteTicket+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C8AA6C5D25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FavoriteTicket+CoreDataProperties.swift"; path = "AirlineTickets/SwiftFiles/FavoriteTicket+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		C8AA6C6E25CEDE160069A966 /* NSString+Localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		C8AA6C8C25CEE8E90069A966 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8AA6C8F25CEE9970069A966 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8AA6CA025D066050069A966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8AA6CA325D066C80069A966 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8AA6CA425D066CB0069A966 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +120,8 @@
 		C8119C1125CC704100D3E261 = {
 			isa = PBXGroup;
 			children = (
-				C8119C9425CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift */,
-				C8119C9525CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift */,
 				C8119C1C25CC704100D3E261 /* AirlineTickets */,
 				C8119C1B25CC704100D3E261 /* Products */,
-				C8119C9325CC7B2D00D3E261 /* AirlineTickets-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,64 +136,33 @@
 		C8119C1C25CC704100D3E261 /* AirlineTickets */ = {
 			isa = PBXGroup;
 			children = (
-				C8AA6C1725CC81A30069A966 /* JSON */,
-				C8119C4A25CC74F100D3E261 /* CoreDataHelper.h */,
-				C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */,
-				C8119C4E25CC752100D3E261 /* ProgressView.h */,
-				C8119C4F25CC752100D3E261 /* ProgressView.m */,
-				C8119C5325CC755000D3E261 /* ContentViewController.h */,
-				C8119C5225CC755000D3E261 /* ContentViewController.m */,
-				C8119C5625CC757600D3E261 /* LocationService.h */,
-				C8119C5925CC757600D3E261 /* LocationService.m */,
-				C8119C5825CC757600D3E261 /* MapPrice.h */,
-				C8119C9A25CC7D8600D3E261 /* MapPrice.m */,
-				C8119C5F25CC759900D3E261 /* FirstViewController.h */,
-				C8119C5E25CC759900D3E261 /* FirstViewController.m */,
-				C8119C6025CC759900D3E261 /* MainViewController.h */,
-				C8119C5D25CC759900D3E261 /* MainViewController.m */,
-				C8119C6525CC75C200D3E261 /* NotificationCenter.h */,
-				C8119C6625CC75C200D3E261 /* NotificationCenter.m */,
-				C8119C6725CC75C200D3E261 /* TicketsViewController.h */,
-				C8119C6825CC75C200D3E261 /* TicketsViewController.m */,
-				C8119C6925CC75C200D3E261 /* TicketTableViewCell.h */,
-				C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */,
-				C8119C6E25CC75E400D3E261 /* Model.xcdatamodeld */,
-				C8119C7625CC760C00D3E261 /* APIManager.h */,
-				C8119C7725CC760C00D3E261 /* APIManager.m */,
-				C8119C7325CC760B00D3E261 /* MapViewController.h */,
-				C8119C7825CC760C00D3E261 /* MapViewController.m */,
-				C8119C7925CC760C00D3E261 /* PlaceViewController.h */,
-				C8119C7225CC760B00D3E261 /* PlaceViewController.m */,
-				C8119C7425CC760B00D3E261 /* TabBarController.h */,
-				C8119C7525CC760B00D3E261 /* TabBarController.m */,
-				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
-				C8119C4525CC747700D3E261 /* Supporting files */,
-				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
-				C8119C2E25CC704500D3E261 /* Info.plist */,
-				C8119C2F25CC704500D3E261 /* main.m */,
-				C8119C8425CC76E600D3E261 /* Airport.h */,
-				C8119C8625CC76E600D3E261 /* Airport.m */,
-				C8119C8725CC76E700D3E261 /* City.h */,
-				C8119C8525CC76E600D3E261 /* City.m */,
-				C8119C8B25CC76E800D3E261 /* Country.h */,
-				C8119C8325CC76E600D3E261 /* Country.m */,
-				C8119C8C25CC76E800D3E261 /* DataManager.h */,
-				C8119C8825CC76E700D3E261 /* DataManager.m */,
-				C8119C8A25CC76E800D3E261 /* Ticket.h */,
-				C8119C8925CC76E800D3E261 /* Ticket.m */,
+				C8AA6C2825CE592A0069A966 /* Services */,
+				C8AA6C2925CE59370069A966 /* Managers */,
+				C8AA6C2A25CE59570069A966 /* Models */,
+				C8AA6C2B25CE59670069A966 /* Components */,
+				C8AA6C2C25CE59DD0069A966 /* Screens */,
+				C8AA6C5A25CE707D0069A966 /* CoreData */,
+				C8AA6C6425CE73E10069A966 /* SwiftFiles */,
+				C8AA6C2D25CE5A110069A966 /* Utils */,
+				C8AA6C6C25CEDDD30069A966 /* Localizations */,
+				C8119C4525CC747700D3E261 /* SupportingFiles */,
 			);
 			path = AirlineTickets;
 			sourceTree = "<group>";
 		};
-		C8119C4525CC747700D3E261 /* Supporting files */ = {
+		C8119C4525CC747700D3E261 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C8CD477825D3A96E009347E6 /* forBase */,
 				C8119C3B25CC73F700D3E261 /* AppDelegate.h */,
 				C8119C3C25CC741100D3E261 /* AppDelegate.m */,
 				C8119C4025CC743E00D3E261 /* SceneDelegate.h */,
 				C8119C4125CC745700D3E261 /* SceneDelegate.m */,
+				C8119C8025CC763E00D3E261 /* Assets.xcassets */,
+				C8119C2E25CC704500D3E261 /* Info.plist */,
+				C8119C2F25CC704500D3E261 /* main.m */,
 			);
-			path = "Supporting files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		C8AA6C1725CC81A30069A966 /* JSON */ = {
@@ -197,6 +173,140 @@
 				C8AA6C1E25CC81F00069A966 /* countries.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		C8AA6C2825CE592A0069A966 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C5625CC757600D3E261 /* LocationService.h */,
+				C8119C5925CC757600D3E261 /* LocationService.m */,
+				C8119C6525CC75C200D3E261 /* NotificationCenter.h */,
+				C8119C6625CC75C200D3E261 /* NotificationCenter.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C8AA6C2925CE59370069A966 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C4A25CC74F100D3E261 /* CoreDataHelper.h */,
+				C8119C4B25CC74F100D3E261 /* CoreDataHelper.m */,
+				C8119C7625CC760C00D3E261 /* APIManager.h */,
+				C8119C7725CC760C00D3E261 /* APIManager.m */,
+				C8119C8C25CC76E800D3E261 /* DataManager.h */,
+				C8119C8825CC76E700D3E261 /* DataManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C8AA6C2A25CE59570069A966 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C1725CC81A30069A966 /* JSON */,
+				C8119C5825CC757600D3E261 /* MapPrice.h */,
+				C8119C9A25CC7D8600D3E261 /* MapPrice.m */,
+				C8119C8425CC76E600D3E261 /* Airport.h */,
+				C8119C8625CC76E600D3E261 /* Airport.m */,
+				C8119C8725CC76E700D3E261 /* City.h */,
+				C8119C8525CC76E600D3E261 /* City.m */,
+				C8119C8B25CC76E800D3E261 /* Country.h */,
+				C8119C8325CC76E600D3E261 /* Country.m */,
+				C8119C8A25CC76E800D3E261 /* Ticket.h */,
+				C8119C8925CC76E800D3E261 /* Ticket.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8AA6C2B25CE59670069A966 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C4E25CC752100D3E261 /* ProgressView.h */,
+				C8119C4F25CC752100D3E261 /* ProgressView.m */,
+				C8119C6925CC75C200D3E261 /* TicketTableViewCell.h */,
+				C8119C6425CC75C100D3E261 /* TicketTableViewCell.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C8AA6C2C25CE59DD0069A966 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C2F25CE5A730069A966 /* Common */,
+				C8119C6025CC759900D3E261 /* MainViewController.h */,
+				C8119C5D25CC759900D3E261 /* MainViewController.m */,
+				C8119C5F25CC759900D3E261 /* FirstViewController.h */,
+				C8119C5E25CC759900D3E261 /* FirstViewController.m */,
+				C8119C5325CC755000D3E261 /* ContentViewController.h */,
+				C8119C5225CC755000D3E261 /* ContentViewController.m */,
+				C8119C6725CC75C200D3E261 /* TicketsViewController.h */,
+				C8119C6825CC75C200D3E261 /* TicketsViewController.m */,
+				C8119C7325CC760B00D3E261 /* MapViewController.h */,
+				C8119C7825CC760C00D3E261 /* MapViewController.m */,
+				C8119C7925CC760C00D3E261 /* PlaceViewController.h */,
+				C8119C7225CC760B00D3E261 /* PlaceViewController.m */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C8AA6C2D25CE5A110069A966 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C5B25CE70A50069A966 /* AirlineTickets-Bridging-Header.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C8AA6C2F25CE5A730069A966 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C7425CC760B00D3E261 /* TabBarController.h */,
+				C8119C7525CC760B00D3E261 /* TabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C8AA6C5A25CE707D0069A966 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C8119C6E25CC75E400D3E261 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C8AA6C6425CE73E10069A966 /* SwiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C5D25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift */,
+				C8AA6C5C25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift */,
+			);
+			path = SwiftFiles;
+			sourceTree = "<group>";
+		};
+		C8AA6C6C25CEDDD30069A966 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C7425CEE42C0069A966 /* needsToAddIfUsingCustomMethod-localize */,
+				C8AA6C8D25CEE8E90069A966 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		C8AA6C7425CEE42C0069A966 /* needsToAddIfUsingCustomMethod-localize */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C6E25CEDE160069A966 /* NSString+Localize.h */,
+				C8AA6C6D25CEDE160069A966 /* NSString+Localize.m */,
+			);
+			path = "needsToAddIfUsingCustomMethod-localize";
+			sourceTree = "<group>";
+		};
+		C8CD477825D3A96E009347E6 /* forBase */ = {
+			isa = PBXGroup;
+			children = (
+				C8AA6C9F25D066050069A966 /* InfoPlist.strings */,
+				C8119C2B25CC704500D3E261 /* LaunchScreen.storyboard */,
+			);
+			path = forBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +350,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = C8119C1125CC704100D3E261;
 			productRefGroup = C8119C1B25CC704100D3E261 /* Products */;
@@ -257,6 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8AA6C1C25CC81D90069A966 /* cities.json in Resources */,
+				C8AA6CA125D066050069A966 /* InfoPlist.strings in Resources */,
+				C8AA6C8B25CEE8E90069A966 /* Localizable.strings in Resources */,
 				C8119C2D25CC704500D3E261 /* LaunchScreen.storyboard in Resources */,
 				C8119C8125CC763E00D3E261 /* Assets.xcassets in Resources */,
 				C8AA6C1F25CC81F00069A966 /* countries.json in Resources */,
@@ -280,18 +393,19 @@
 				C8119C5425CC755000D3E261 /* ContentViewController.m in Sources */,
 				C8119C3025CC704500D3E261 /* main.m in Sources */,
 				C8119C6A25CC75C200D3E261 /* TicketTableViewCell.m in Sources */,
+				C8AA6C5E25CE70A50069A966 /* FavoriteTicket+CoreDataClass.swift in Sources */,
 				C8119C6125CC759900D3E261 /* MainViewController.m in Sources */,
-				C8119C9625CC7B2D00D3E261 /* FavoriteTicket+CoreDataClass.swift in Sources */,
 				C8119C9025CC76E900D3E261 /* DataManager.m in Sources */,
 				C8119C8F25CC76E900D3E261 /* Airport.m in Sources */,
 				C8119C4C25CC74F200D3E261 /* CoreDataHelper.m in Sources */,
 				C8119C8E25CC76E900D3E261 /* City.m in Sources */,
 				C8119C4225CC745700D3E261 /* SceneDelegate.m in Sources */,
+				C8AA6C6F25CEDE160069A966 /* NSString+Localize.m in Sources */,
 				C8119C6225CC759900D3E261 /* FirstViewController.m in Sources */,
 				C8119C5B25CC757700D3E261 /* LocationService.m in Sources */,
 				C8119C7A25CC760C00D3E261 /* PlaceViewController.m in Sources */,
+				C8AA6C5F25CE70A50069A966 /* FavoriteTicket+CoreDataProperties.swift in Sources */,
 				C8119C7B25CC760C00D3E261 /* TabBarController.m in Sources */,
-				C8119C9725CC7B2D00D3E261 /* FavoriteTicket+CoreDataProperties.swift in Sources */,
 				C8119C7C25CC760C00D3E261 /* APIManager.m in Sources */,
 				C8119C9125CC76E900D3E261 /* Ticket.m in Sources */,
 				C8119C6B25CC75C200D3E261 /* NotificationCenter.m in Sources */,
@@ -310,6 +424,25 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C8AA6C8D25CEE8E90069A966 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AA6C8C25CEE8E90069A966 /* en */,
+				C8AA6C8F25CEE9970069A966 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C8AA6C9F25D066050069A966 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AA6CA025D066050069A966 /* Base */,
+				C8AA6CA325D066C80069A966 /* en */,
+				C8AA6CA425D066CB0069A966 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -317,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -433,14 +568,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2Z4Y76PYN;
-				INFOPLIST_FILE = AirlineTickets/Info.plist;
+				INFOPLIST_FILE = AirlineTickets/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rkolossov.AirlineTickets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AirlineTickets-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AirlineTickets/Utils/AirlineTickets-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,14 +590,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2Z4Y76PYN;
-				INFOPLIST_FILE = AirlineTickets/Info.plist;
+				INFOPLIST_FILE = AirlineTickets/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rkolossov.AirlineTickets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AirlineTickets-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AirlineTickets/Utils/AirlineTickets-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
